@@ -1,4 +1,7 @@
 {% extends 'main_site/base.html' %}
+{% block title %}
+Products
+{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -14,7 +17,7 @@
                         <div class="col-md-8">
                             <div class="card-body m-0">
                                 <h5 class="card-title"><strong>{{ product.product_name }}</strong></h5>
-                                <p class="card-text"><strong>Detail : <span class="text-secondary">{{ product.discription }}</span></strong></p>
+                                <p class="card-text"><strong>Detail : <span class="text-secondary">{{ product.discription | truncatechars:45 }}</span></strong></p>
                             </div>
                             <div class="">
                                 <p class="border rounded  p-1 m-1 bg-success bg-opacity-25">

@@ -1,4 +1,9 @@
 {% extends 'main_site/base.html' %}
+
+{% block title %}
+    Documentation
+{% endblock %}
+
 {% block content %}
 
 <main>
@@ -16,7 +21,7 @@
                                     <a class="text-decoration-none text-secondary" href="#fetch_all"> <span uk-icon="link"> </span> Fetch data all</a>
                                 </li>
                                 <li class="d-inline-block mb-2 mt-1  p-1 "> 
-                                    <a class="text-decoration-none text-secondary" href="#get_one"> <span uk-icon="link"> </span> Fetch data with ID or  slug</a>
+                                    <a class="text-decoration-none text-secondary" href="#get_one"> <span uk-icon="link"> </span> Fetch data with slug</a>
                                 </li>
                                 <li class="d-inline-block mb-2 mt-1  p-1 "> 
                                     <a class="text-decoration-none text-secondary" href="#delete"> <span uk-icon="link"> </span> Delete product</a>
@@ -48,24 +53,19 @@
         
                     <article class="bg-success bg-opacity-10 m-3 rounded p-3" id="get_one">
                         <p>
-                            <strong>| For retrive the products details specificly ( with ID or slug/title ). </strong><br>
+                            <strong>| For retrive the products details specificly with slug of the product. </strong><br>
                             <span class="border rounded p-1 bg-success text-light ps-2 pe-2 pt-1 pb-1 mt-2"><small>Method : GET</small></span>
                         </p>
-                        <p class="m-0"><strong>URL : </strong><code class="mt-2"> http://localhost:8000/api/products/1/</code></p>
-                        <p class="m-0"><strong>or</strong></p>
                         <p><strong>URL : </strong><code class="mt-2"> http://localhost:8000/api/products/example-slug-title/</code></p>
         
                     </article>
         
                     <article class="bg-success bg-opacity-10 m-3 rounded p-3" id="delete">
                         <p>
-                            <strong>| Delete product data from database. </strong><br>
+                            <strong>| Delete product data from database with ID. </strong><br>
                             <span class="border rounded p-1 bg-success text-light ps-2 pe-2 pt-1 pb-1 mt-2"><small>Method : DELETE</small></span>
                         </p>
                         <p class="m-0"><strong>URL : </strong><code class="mt-2"> http://localhost:8000/api/products/1/</code></p>
-                        <p class="m-0"><strong>or</strong></p>
-                        <p><strong>URL : </strong><code class="mt-2"> http://localhost:8000/api/products/example-slug-title/</code> not working </p>
-                        <p class="m-0"><small>*Note : its better to delete product with <strong>PRODUCT ID </strong>.</small></p>
         
                     </article>
         
