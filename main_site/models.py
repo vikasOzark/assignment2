@@ -10,3 +10,6 @@ class ProductModel(models.Model):
     price = models.FloatField()
     product_img = models.ImageField()
     
+
+    def __str__(self):
+        return f'{self.product_name} -> {self.price}'

@@ -1,6 +1,5 @@
 from django.contrib import admin
-
-from api.serializers import ProductSerializer
 from .models import ProductModel
-# Register your models here.
+
+# Register model to perfom CURD task from admin pannel
 admin.site.register(ProductModel)

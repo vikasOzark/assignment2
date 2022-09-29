@@ -5,3 +5,4 @@ urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('docs/', views.documentation, name='docs')
 ]
+# hello gg
