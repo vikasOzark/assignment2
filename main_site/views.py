@@ -3,6 +3,8 @@ from . import models
 from django.views import generic
 
 # Create your views here.
+
+# class based views
 class IndexView(generic.ListView):
     context_object_name = 'products'
     queryset = models.ProductModel.objects.all()

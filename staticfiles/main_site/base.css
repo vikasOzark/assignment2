@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+header{
+background-color: #b8ffd0 !important;
+}
+#navigate{
+    position: fixed;
+    top:15px;
+    }
+
+  body{
+    background-color: rgba(219, 219, 219, 0.596);
+    height:100vh
+  }
+       
